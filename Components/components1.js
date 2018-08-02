@@ -12,5 +12,5 @@ export default class Component1 extends Component{
             </View>
         );
     }
-}
+} 
 
