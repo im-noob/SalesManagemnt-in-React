@@ -6,8 +6,8 @@ import Component1 from './Components/components1';
 export default class myapp extends Component{
   render(){
     return(
-      <View>
-        <Text> _____________________</Text>
+      <View>   
+        <Text> _____________________</Text> 
         <Text> _____________________</Text>
         <Text> _____________________</Text>
 
