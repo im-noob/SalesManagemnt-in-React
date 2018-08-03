@@ -36,10 +36,12 @@ export default class Login extends Component {
                         </View>
                         
                         <View style={{margin:7}} />
-                            <Button 
-                                onPress={this.props.onLoginPress}
-                                title="          Tap TO Login Me          "
-                            />
+                        <Button 
+                            onPress={this.props.onLoginPress}
+                            title="          Tap TO Login Me          "
+                        />
+                        <View style={{margin:3}} />
+                        <Text style={styles.forgetPass}>           Forget Password?</Text>
                     </View>
                 </ImageBackground>
             </View>
@@ -91,6 +93,11 @@ let styles = StyleSheet.create({
         textAlign: 'center',
         padding: 8,
         fontWeight: '500',
+      },
+      forgetPass:{
+          color:'#3E83F3',
+          alignSelf: 'flex-start',
+          
       }
  
     
