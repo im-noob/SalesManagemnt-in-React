@@ -1,5 +1,7 @@
 import React ,{Component} from 'react';
 import { Text,View , StyleSheet, TouchableHighlight,TouchableOpacity,TextInput,Switch } from 'react-native';
+
+
 import Login from './Components/login/Login';
 import Secured from './Components/login/Secure';
 

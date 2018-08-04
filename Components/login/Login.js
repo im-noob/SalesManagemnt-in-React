@@ -7,18 +7,28 @@ import {
     Button,
     StyleSheet,
     ImageBackground,
-    Image,
+    Picker,
 } from 'react-native';
 //import { Text,View , StyleSheet, TouchableHighlight,TouchableOpacity,TextInput,Switch } from 'react-native';
 export default class Login extends Component {
     
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            userType: 'SalesMan',
+        };
+    
+        
+      }
     render() {
         let pic = {
             uri: 'https://i.pinimg.com/236x/31/86/d4/3186d43532f63f5b8b9c8f1afa635bd9--heart-wallpaper-wallpaper-iphone.jpg'
           };
+          
         return (
             
-            
+             
             <View>
                     
                 <ImageBackground
@@ -33,6 +43,16 @@ export default class Login extends Component {
                         <View style = {styles.inputBox}>
                             <TextInput style={styles.input} placeholder='Username' />
                             <TextInput style={styles.input} placeholder='Password' />
+                            <View style={styles.picker}>
+                                <Text style={styles.TextLoginAs}>Login As:</Text>
+                                <Picker
+                                    selectedValue={this.state.userType}
+                                    style={styles.pickerStyle}
+                                    onValueChange={(itemValue, itemIndex) => this.setState({userType: itemValue})}>
+                                    <Picker.Item label="SalesMan" value="SalesMan" />
+                                    <Picker.Item label="Admin" value="Admin" />
+                                </Picker>
+                            </View>
                         </View>
                         
                         <View style={{margin:7}} />
@@ -98,7 +118,28 @@ let styles = StyleSheet.create({
           color:'#3E83F3',
           alignSelf: 'flex-start',
           
-      }
+      },
+      picker:{
+        flexDirection: 'row',
+        
+    },
+      pickerStyle:{
+        height: 50, 
+        width: 20,
+        color:'white',
+        backgroundColor:'black',
+        flex:1,
+      },
+      TextLoginAs:{
+        height: 50, 
+        width: 20,
+        padding:12,
+        fontSize: 20,
+        fontWeight: '500',
+        color:'white',
+        flex:1
+      },
+      
  
     
   });
