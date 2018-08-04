@@ -1,5 +1,6 @@
 import React ,{Component} from 'react';
 import { Text,View , StyleSheet, TouchableHighlight,TouchableOpacity,TextInput,Switch } from 'react-native';
+<<<<<<< HEAD
 
 
 import Login from './Components/login/Login';
@@ -27,3 +28,21 @@ export default class myapp extends Component{
        
   }
 }
+=======
+import LoginScreen from './Components/login/LoginScreen';
+
+
+
+
+export default class myapp extends Component{
+  render(){
+    return(
+      <View>
+        <LoginScreen/>
+    
+      </View>
+    );    
+  }
+}
+
+>>>>>>> 59e788452ab80480037f3ff0d913f34613e4358a
