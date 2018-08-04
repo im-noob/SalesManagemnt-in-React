@@ -1,8 +1,10 @@
 import BottomNavigation, { FullTab } from 'react-native-material-bottom-navigation';
-import React,{Component} from 'react';
+ 
 import { Text,View , StyleSheet, TouchableHighlight,TouchableOpacity,TextInput,Switch,Icon } from 'react-native';
 
-class MenuTab extends Component {
+import { Component } from 'react';
+export class MenuTab extends Component {
+
     tabs = [
         {
             key: 'games',
@@ -33,9 +35,10 @@ class MenuTab extends Component {
             <View style={{ flex: 1 }}>
 
             </View>
-                 <BottomNavigation onTabPress={newTab => this.setState({ activeTab: newTab.key })} renderTab={this.renderTab} tabs={this.tabs} />
-            </View>);
+
+
+            <BottomNavigation onTabPress={newTab => this.setState({ activeTab: newTab.key })} renderTab={this.renderTab} tabs={this.tabs} />
+        </View>);
     }
 }
 
-export default MenuTab;

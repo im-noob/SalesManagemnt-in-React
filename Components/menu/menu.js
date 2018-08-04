@@ -211,26 +211,7 @@ export default class MenuTest extends Component {
 
 
         <View style={containerMain.boadyCSS}>
-          <Modal
-            animationType="slide"
-            transparent={false}
-            visible={this.state.modalVisible}
-            onRequestClose={() => {
-              alert('Modal has been closed.');
-            }}>
-            <View style={{marginTop: 22}}>
-              <View>
-                <Text>Hello World!</Text>
-
-                <TouchableHighlight
-                  onPress={() => {
-                    this.setModalVisible(!this.state.modalVisible);
-                  }}>
-                  <Text>Hide Modal</Text>
-                </TouchableHighlight>
-              </View>
-            </View>
-          </Modal>
+          <Text>Hello</Text>
         </View>
 
 
