@@ -1,19 +1,17 @@
 import React ,{Component} from 'react';
 import { Text,View , StyleSheet, TouchableHighlight,TouchableOpacity,TextInput,Switch } from 'react-native';
 import Component1 from './Components/components1';
+//import MenuTab from "./Components/menu/MenuTab";
+import MenuTest from "./Components/menu/Menu.js";
 
 
 export default class myapp extends Component{
   render(){
     return(
-      <View>   
-        <Text> _____________________</Text> 
-        <Text> _____________________</Text>
-        <Text> _____________________</Text>
 
-        <Test msg = 'helloooo' />
-        <InputComp />
-        <Component1 />
+      <View style={{flex:1}}>
+        
+        <MenuTest/> 
       </View>
     );    
   }
