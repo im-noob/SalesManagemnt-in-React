@@ -9,7 +9,7 @@ import Secured from './Components/login/Secure';
 
 export default class myapp extends Component{
   state = {
-    isLoggedIn: false
+    isLoggedIn: true
   }
 
   render(){
