@@ -4,10 +4,23 @@ import {
 } from 'react-native';
 
 
-
-export default class 
-let styles = StyleSheet.create({
-    scroll:{
-        
+export default class TakeOrderFromCustomer{
+    render(){
+        return(
+            <ScrollView>
+                <View>
+                    <TextInput></TextInput>
+                </View>
+                <View>
+                    <TextInput></TextInput>
+                </View>
+                <View>
+                    <TextInput></TextInput>
+                </View>
+                <View>
+                    <TextInput></TextInput>
+                </View>
+            </ScrollView>
+        );
     }
-});
+}
