@@ -16,7 +16,7 @@ export default class Header extends Component{
             myState: 'Welcome'
             
         }
- updateState =(val) => {
+ const updateState =(val) => {
                         this.setState({ MyState: val                                         
                                      })
                     }

@@ -9,10 +9,9 @@ export default class myapp extends Component{
   render(){
     return(
 
-      <View style={{flex:1}}>
-        
+     
         <MenuTest/> 
-      </View>
+     
     );    
   }
 }
