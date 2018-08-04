@@ -1,7 +1,6 @@
 import React ,{Component} from 'react';
 import { Text,View , StyleSheet, TouchableHighlight,TouchableOpacity,TextInput,Switch } from 'react-native';
 
-import MenuTest from "./Components/menu/Menu.js";
 
 
 
