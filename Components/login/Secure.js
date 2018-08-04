@@ -3,9 +3,12 @@ import {
     ScrollView,
     Text,
     View,
-    Button
+    Button,
+    StyleSheet,
 } from 'react-native';
 import MapView from 'react-native-maps';
+import TakeOrderFromCustomer from '../salesman/takeOrderFromCustomer';
+import ChangePassword from './changePassword';
 
 
 export default class Secured extends Component {
@@ -35,33 +38,38 @@ export default class Secured extends Component {
          );
        }
 
+
+/*
+<ChangePassword/>
+<Button
+                    onPress={this.props.onLogoutPress}
+                    title="Logout"
+                />
+
+*/
     render() {
         return (
-            <ScrollView style={{padding: 20}}>
-                <Text 
-                    style={{fontSize: 27}}>
-                    <Text> {this.state.latitude} </Text>
-                    <Text> {this.state.longitude} </Text>
-                    <Text> {this.state.error} </Text>
-                </Text>
-                <Text 
-                    style={{fontSize: 27}}>
-                    Welcome
-                </Text>
-                <Text 
-                    style={{fontSize: 27}}>
-                    Welcome
-                </Text>
-                <View style={{margin:20}} />
-            
+            <ScrollView style={styles.conatiner}>
+                
+                
+                
+                
+                <ChangePassword/>
 
-            
-
-                <Button
-                            onPress={this.props.onLogoutPress}
-                            title="Logout"
-                     />
+                
             </ScrollView>
         )
     }
 }
+
+
+let styles = StyleSheet.create({
+    
+    conatiner:{
+        paddingTop: 20,
+        flexDirection: 'column',
+        //justifyContent: 'space-between',
+        flex: 1,
+    }
+
+}); 
