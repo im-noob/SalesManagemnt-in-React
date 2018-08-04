@@ -6,7 +6,7 @@ import {
     Button,
     StyleSheet,
 } from 'react-native';
-import MapView from 'react-native-maps';
+
 import TakeOrderFromCustomer from '../salesman/takeOrderFromCustomer';
 import ChangePassword from './changePassword';
 
@@ -22,22 +22,7 @@ export default class Secured extends Component {
           error:null,
         };
     }
-    componentDidMount() {
-        navigator.geolocation.getCurrentPosition(
-           (position) => {
-             console.log("wokeeey");
-             console.log(position);
-             this.setState({
-               latitude: position.coords.latitude,
-               longitude: position.coords.longitude,
-               error: null,
-             });
-           },
-           (error) => this.setState({ error: error.message }),
-           { enableHighAccuracy: true, timeout: 200000, maximumAge: 1000 },
-         );
-       }
-
+    
 
 /*
 <ChangePassword/>
