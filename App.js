@@ -1,11 +1,12 @@
 import React ,{Component} from 'react';
 import { Text,View , StyleSheet, TouchableHighlight,TouchableOpacity,TextInput,Switch } from 'react-native';
 
+import MenuTest from "./Components/menu/Menu.js";
+
 
 
 import Login from './Components/login/Login';
 import Secured from './Components/login/Secure';
-
 
 export default class myapp extends Component{
   state = {
@@ -13,6 +14,7 @@ export default class myapp extends Component{
   }
 
   render(){
+
     
        
     if (this.state.isLoggedIn) 
@@ -26,6 +28,5 @@ export default class myapp extends Component{
         
       
        
-
   }
 }
