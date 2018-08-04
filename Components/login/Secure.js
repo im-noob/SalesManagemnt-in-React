@@ -7,8 +7,13 @@ import {
     StyleSheet,
 } from 'react-native';
 
+<<<<<<< HEAD
 import TakeOrderFromCustomer from '../salesman/takeOrderFromCustomer';
 import ChangePassword from './changePassword';
+=======
+import MenuTest from '../menu/Menu.js';
+import MapView from 'react-native-maps';
+>>>>>>> 72ee9f2bce61d78c954452c3908e45af8943a92a
 
 
 export default class Secured extends Component {
@@ -34,6 +39,7 @@ export default class Secured extends Component {
 */
     render() {
         return (
+<<<<<<< HEAD
             <ScrollView style={styles.conatiner}>
                 
                 
@@ -43,6 +49,17 @@ export default class Secured extends Component {
 
                 
             </ScrollView>
+=======
+            
+
+            
+
+                // <Button
+                //             onPress={this.props.onLogoutPress}
+                //             title="Logout"
+                //      />
+            <MenuTest/> 
+>>>>>>> 72ee9f2bce61d78c954452c3908e45af8943a92a
         )
     }
 }
